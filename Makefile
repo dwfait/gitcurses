@@ -1,7 +1,7 @@
 CPP_FILES := $(wildcard src/*.cpp)
 OBJ_FILES := $(addprefix obj/,$(notdir $(CPP_FILES:.cpp=.o)))
 CC_FLAGS := -Wall -Wextra -pedantic -std=c++11
-LD_FLAGS := -lcurses
+LD_FLAGS := -lgit2
 GXX := /usr/local/Cellar/gcc/4.7.2/bin/g++-4.7
 
 bin/gitcurses: $(OBJ_FILES)
